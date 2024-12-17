@@ -72,7 +72,6 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100%;
   width: 1440px;
-  height: 800px;
   color: #ffff;
   font-size: 16px;
   line-height: 26px;
@@ -81,23 +80,31 @@ body {
   background-color: #ff7979;
 }
 
+main {
+  flex-grow: 1;
+}
+
 .container {
 }
 
 .content {
   display: flex;
+  padding-left: 165px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 121px;
+  padding-right: 165px;
+  gap: 45px;
 }
 .content__info {
-  width: 525px;
+  padding-top: 290px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 165px;
-  padding-top: 290px;
-  padding-bottom: 290px;
+  margin-left: 45px;
 }
 .content__info__title {
+  max-width: 525px;
   font-size: 50px;
   line-height: 55px;
   letter-spacing: -0.52px;
@@ -105,11 +112,87 @@ body {
   margin-bottom: 11px;
 }
 .content__info__text {
+  max-width: 525px;
   font-size: 16px;
-
   line-height: 26px;
 }
 
 .content__form {
-  width: 540px;
+  width: 100%;
+  max-width: 540px;
+  padding-top: 205px;
+  border-radius: 10px;
+}
+.content__form__top {
+  padding-left: 112px;
+  padding-top: 17px;
+  background-color: #5e54a4;
+  width: 100%;
+  max-width: 540px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.content__form__top__text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.input {
+  width: 460px;
+  height: 56px;
+  padding-left: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  opacity: 0.75;
+  border-radius: 5px;
+  border: 1px solid #5e54a4;
+  margin-bottom: 20px;
+}
+
+.input:focus {
+}
+
+.input::placeholder {
+}
+
+.content__form__btn {
+  background-color: #38cc8b;
+  width: 460px;
+  height: 56px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.content__form__text {
+  font-size: 11px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #bab7d4;
+}
+.content__form__link {
+  color: #ff7979;
+  font-size: 12px;
 }
